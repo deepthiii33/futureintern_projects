@@ -37,12 +37,14 @@ You can also download the latest version directly from https://portswigger.net/b
 - Send the request to **Intruder** for further testing.  
 
 ### **4. Configure Intruder for Brute Force Attack**  
+
+#### **Select the Attack Type**  
+- Choose **"Cluster Bomb"** (so Burp tests each username with each password).
+- 
 #### **Set Payload Positions**  
 - In Burp Suite’s **Intruder** module, set the **Payload Positions**.  
 - Replace the **username and password** with **placeholders** (Click **"Add §"**).  
-
-#### **Select the Attack Type**  
-- Choose **"Cluster Bomb"** (so Burp tests each username with each password).  
+[example setting username payload](https://github.com/deepthiii33/futureintern_projects/blob/main/setting%20username%20payload..png)
 
 #### **Set Payloads**  
 - **Payload Set [1] (Usernames)**:  
