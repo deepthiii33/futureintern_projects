@@ -17,7 +17,7 @@ This repository contains the findings from a penetration test conducted on `http
 - **Hashcat** - Advanced GPU-based password cracking.
 - **OpenSSL** - Generating password hashes.
 
-- [burp_suite_findings](#burp_findings.md)
-- [john_the_ripper](#john_ripper_findings.md)
+- [burp suite](#burp_findings.md)
+- [john the ripper](#john_ripper_findings.md)
 - [hashcat](#hashcat_findings.md)
-- [final_report](#report.md)
+- [final report](#report.md)
