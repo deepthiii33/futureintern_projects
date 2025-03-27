@@ -15,8 +15,9 @@ It helps security testers identify security flaws in web applications by interce
 Burp Suite comes pre-installed on Kali Linux by default. It is part of the standard toolset used for penetration testing and web security assessments
 You can also download the latest version directly from https://portswigger.net/burp
 
-**Our traget site:** http://testphp.vulnweb.com/login.php 
-**Our Goal:** To find the username and password of the target site. *(Here, the site already has a default username and password set as "test", but we will use Burp Suite to discover the credentials as if we don’t know them.)*
+
+- **Target site:** http://testphp.vulnweb.com/login.php 
+- **Goal:** To find the username and password of the target site. *(Here, the site already has a default username and password set as "test", but we will use Burp Suite to discover the credentials as if we don’t know them.)*
 
 ---
 ## **Steps to Capture and Attack Login Requests Using Burp Suite**  
@@ -34,7 +35,9 @@ You can also download the latest version directly from https://portswigger.net/b
 ### **3. Analyze the Captured Request**  
 - Navigate to **Proxy → HTTP history**.  
 - Locate the request and look for **username and password fields**.  
-- Send the request to **Intruder** for further testing.  
+- Send the request to **Intruder** for further testing.
+
+[capturing and sending  the req to intruder](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/burp_capture.png)
 
 ### **4. Configure Intruder for Brute Force Attack**  
 
@@ -43,18 +46,30 @@ You can also download the latest version directly from https://portswigger.net/b
 - 
 #### **Set Payload Positions**  
 - In Burp Suite’s **Intruder** module, set the **Payload Positions**.  
-- Replace the **username and password** with **placeholders** (Click **"Add §"**).  
-[example setting username payload](https://github.com/deepthiii33/futureintern_projects/blob/main/setting%20username%20payload..png)
-
+- Replace the **username and password** with **placeholders** (Click **"Add §"**)
+  
 #### **Set Payloads**  
 - **Payload Set [1] (Usernames)**:  
   - Select **"Simple List"** as the payload type.  
-  - Load a **wordlist of usernames** or manually enter **common usernames**.  
+  - Load a **wordlist of usernames** or manually enter **common usernames**
+    
+[example for username payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/username_payload.png)
+    
 - **Payload Set [2] (Passwords)**:  
-  - Same process as **Payload Set [1]**, but this time enter or load passwords.  
+  - Same process as **Payload Set [1]**, but this time  passwords
+
+[example for pass payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/pass_payload.png)
+
+  - Here, I load username.txt and pass.txt, which I previously saved in my folder with known username and password ,and actuall one from the site
+
+[Example of the username and pass files I saved and loaded](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/user_pass_list.png)
+ 
+    
 
 ### **5. Start the Attack**  
-- Click **Start Attack** in Burp’s **Intruder**.  
+- Click **Start Attack** in Burp’s **Intruder**.
+
+[example for doing  attack](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/attack.png)
 
 ### **6. Identify Valid Credentials**  
 - Monitor **HTTP Response Codes** and **Content Length**.  
@@ -65,6 +80,13 @@ You can also download the latest version directly from https://portswigger.net/b
 
 * Failed logins might return a consistent response length (e.g., 302 Redirect or Invalid Login message).
 * Successful logins will have different response lengths or status codes (200 OK)
+
+* we can see only 1 set of payload has status code:200 , and length (6201) that is different from other length
+* so that is our username and password
+* now we can login to our target site
+
+* This is a basic example of doing password cracking with BurpSuite . This can be performed only if credentials were transmitted in plaintext (Can check thorugh capturing request in burp or newtrok tab in  inspect)
+  
 
 
 
