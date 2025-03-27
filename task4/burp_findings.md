@@ -1,7 +1,6 @@
 ## 🛠 Burp Suite Overview
 
-Burp Suite is a powerful web vulnerability scanner and penetration testing tool. 
-It helps security testers identify security flaws in web applications by intercepting and analyzing HTTP/S requests.
+
 
 ##  Key Features:
 * Intercept Requests – Modify web traffic between client and server.
