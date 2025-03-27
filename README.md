@@ -1,12 +1,11 @@
 # Internship_projects
 
 
-## 📂 Task 1 Contents (Password Cracking)
+## 📂 Task 4 Contents (Password Cracking)
 
 # 🔍 Penetration Testing Report
 
 ---
-
 
 ## 📌 Overview
 This repository contains the findings from a penetration test conducted on `http://testphp.vulnweb.com/`. The test focused on identifying vulnerabilities using **Burp Suite, John the Ripper, and Hashcat**
@@ -19,7 +18,7 @@ This repository contains the findings from a penetration test conducted on `http
 
 ## 🛠 Tools Used
 - **Burp Suite** - Capturing and analyzing HTTP requests.
-- **John the Ripper** - Cracking password hashes.
+- **John the Ripper** - Cracking password hashes
 - **Hashcat** - Advanced GPU-based password cracking.
-- **OpenSSL** - Generating password hashes.
+- **OpenSSL** - Generating password hashes
 
