@@ -11,10 +11,10 @@
 ## 📌 Overview
 This repository contains the findings from a penetration test conducted on `http://testphp.vulnweb.com/`. The test focused on identifying vulnerabilities using **Burp Suite, John the Ripper, and Hashcat**
 
-- [burp suite](#burp_findings.md)
-- [john the ripper](#john_ripper_findings.md)
-- [hashcat](#hashcat_findings.md)
-- [final report](#report.md)
+- [burp suite](task4/burp_findings.md)
+- [john the ripper](task4/john_ripper_findings.md)
+- [hashcat](#task4/ashcat_findings.md)
+- [final report](task4/report.md)
 
 
 ## 🛠 Tools Used
