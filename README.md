@@ -1,6 +1,6 @@
 # Internship_projects
 
-## 📂 Task 3 Contents (Sniffing attack using wireshark)
+## 📂 Task 3 (Sniffing attack using wireshark)
 
 ## 📌 Overview
 This report contains findings conducted on 'http://testphp.vulnweb.com' using wireshark . The goal was to inspect network packets,and analyze HTTP requests.
@@ -17,7 +17,7 @@ This report contains findings conducted on 'http://testphp.vulnweb.com' using wi
 
 
 
-## 📂 Task 4 Contents (Password Cracking)
+## 📂 Task 4 (Password Cracking)
 
 
 ## 📌 Overview
