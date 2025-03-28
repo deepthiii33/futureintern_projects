@@ -12,7 +12,6 @@ This repository contains the findings from a penetration test conducted on `http
 
 - [burp suite](task4/burp_findings.md)
 - [john the ripper and hashcat ](task4/john_ripper_and_hahscat_findings.md)
-- [hashcat](#task4/ashcat_findings.md)
 - [final report](task4/report.md)
 
 
