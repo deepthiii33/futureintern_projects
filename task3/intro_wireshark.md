@@ -31,12 +31,13 @@
   - **Wireshark has two types of filters:**
    1. Capture Filters → Applied before capturing packets.
       -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
-      - [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshar_capture_filter.png)
+      
+  [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshar_capture_filter.png)
 
    2. Display Filters → Applied after capturing packets to analyze specific data.
       - Example:http ---> (Shows only HTTP packets.)
 
-[Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
+ [Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
 
 
 # How to open a pcapng file through wireshrak in linux 
