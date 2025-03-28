@@ -29,14 +29,14 @@
   - --wordlist=/usr/share/wordlists/rockyou.txt ---> Uses the RockYou wordlist, a common list of passwords, to try and crack the hash.You can replace it with your own wordlist if needed
   - password123_hash.txt ---> The file containing the hashed password that we want to crack.
 
-[example of using john the ripper md5 hashed password](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/john_ripper_md5.png)
+   [example of using john the ripper md5 hashed password](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/john_ripper_md5.png)
 
 
-If we have a hashed passowrd with us we can do the  "run john the ripper on the hash" command and get the password of the hash value. Suppose we don't know type of hash value(md5 , sha1 , sha256,...) , we can use online hash indentifiers or 
-hashid and hash idenifier command in kali 
-- To use ;  hashid <hashvalue> --->  will get the hash type
-- we must know the hash type to find the hash value password
-- This is a basic example of md5 , like this we can do for sha1 or any type of hash
+  - If we have a hashed passowrd with us we can do the  "run john the ripper on the hash" command and get the password of the hash value. Suppose we don't know type of hash value(md5 , sha1 , sha256,...)
+  -  we can use online hash indentifiers or hashid and hash idenifier command in kali 
+  - To use ;  hashid <hashvalue> --->  will get the hash type
+  - we must know the hash type to find the hash value password
+ - This is a basic example of md5 , like this we can do for sha1 or any type of hash
 
    # Below is an example for sha1 hash type
 
