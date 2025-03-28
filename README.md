@@ -1,5 +1,14 @@
 # Internship_projects
 
+## 📂 Task 3 Contents (Sniffing attack using wireshark)
+
+## 📌 Overview
+This report contains findings conducted on 'http://testphp.vulnweb.com' using wireshark a network packet analyzer.
+
+- [About Wireshark](task3intro_wireshark.md)
+- [wireshark Report](task3/report.md)
+
+-----------------------
 
 ## 📂 Task 4 Contents (Password Cracking)
 
@@ -8,7 +17,7 @@
 ---
 
 ## 📌 Overview
-This repository contains the findings from a penetration test conducted on `http://testphp.vulnweb.com/`. The test focused on identifying vulnerabilities using **Burp Suite, John the Ripper, and Hashcat**
+This report contains the findings from a penetration test conducted on 'http://testphp.vulnweb.com/'. The test focused on identifying vulnerabilities using **Burp Suite, John the Ripper, and Hashcat**
 
 - [burp suite](task4/burp_findings.md)
 - [john the ripper and hashcat ](task4/john_ripper_and_hashcat_findings.md)
