@@ -9,7 +9,7 @@
  -  We can Save and export packet data in different formats.
  -  Apply filters to analyze specific packets efficiently
 
- -  can get detalied information from it's official site https://www.wireshark.org/
+ -  can get detalied information from it's official site **"https://www.wireshark.org/"**
 
 ## Downloading and using Wireshark
 
@@ -20,6 +20,8 @@
 
  - For windows wireshark can be downloaded from it's offcial site : https://www.wireshark.org/download.html
 
+   **Here , i'm using kali linux for wireshark , not windows**
+
 ## About .pcapng  and .pcap files
 
 - *.pcap (Packet Capture) → Older format, stores captured network packets.
@@ -29,12 +31,33 @@
   - **Wireshark has two types of filters:**
    1. Capture Filters → Applied before capturing packets.
       -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
-      [example]()
+      [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshar_capture_filter.png)
 
    2. Display Filters → Applied after capturing packets to analyze specific data.
       - Example:http ---> (Shows only HTTP packets.)
 
-[Some basic filters in Wireshark]
+[Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
+
+
+# How to open a pcapng file through wireshrak in linux 
+
+ ## **Method 1: Using GUI**  
+1. Open Wireshark:  command used "**wireshark &**
+2. Click **"File" → "Open"**.  
+3. Navigate to your ".pcapng" file and select it.  
+4. Click **"Open"** to start analyzing the packet data.  
+
+## **Method 2: Using Terminal**  
+- If you already know the file location, open it directly from the terminal:  wireshark /path/to/file.pcapng
+ [Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark_open_through_terminal.png)
+  
+## **Method 3: Using TShark (CLI Alternative to Wireshark)**  
+- If you prefer the **command line**, use **TShark**:  tshark -r /path/to/file.pcapng
+- This prints the packet details in the terminal  
+[Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/tshark.png)
+- Can get more usage of tshark through the command **tshark --help**
+
+
 
 
 
