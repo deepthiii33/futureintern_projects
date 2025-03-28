@@ -44,7 +44,7 @@
 
   - like this we can hashcat tool for same process
 
-## hashcat - cracking password hashes
+## Hashcat - cracking password hashes
 
 - Hashcat is a powerful password-cracking tool used to recover passwords from hashed values.
 - It supports various hashing algorithms like MD5, SHA-1, SHA-256, etc
@@ -72,7 +72,7 @@
  ---------   
 
  * like this , if we obtain a **hashed password**, we can crack it using **Hashcat** or **John the Ripper**. However, if the password is transmitted in **plain text**, we can capture and exploit it using **Burp Suite** or **Hydra**.
- * 
+
 
   
 
