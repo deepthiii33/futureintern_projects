@@ -37,12 +37,12 @@ You can also download the latest version directly from https://portswigger.net/b
 - Locate the request and look for **username and password fields**.  
 - Send the request to **Intruder** for further testing.
 
-[Capturing and sending  the req to intruder](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/burp_capture.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/burp_capture.png)
 ### **4. Configure Intruder for Brute Force Attack**  
 
 #### **Select the Attack Type**  
 - Choose **"Cluster Bomb"** (so Burp tests each username with each password).
-- 
+  
 #### **Set Payload Positions**  
 - In Burp Suite’s **Intruder** module, set the **Payload Positions**.  
 - Replace the **username and password** with **placeholders** (Click **"Add §"**)
@@ -61,14 +61,14 @@ You can also download the latest version directly from https://portswigger.net/b
 
   - Here, I load username.txt and pass.txt, which I previously saved in my folder with known username and password ,and actuall one from the site
 
-[Example of the username and pass files I saved and loaded](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/user_pass_list.png)
+[Example of the username and pass files which I saved and loaded](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/user_pass_list.png)
  
     
 
 ### **5. Start the Attack**  
 - Click **Start Attack** in Burp’s **Intruder**.
 
-[Example for doing  attack](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/attack.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/attack.png)
 
 ### **6. Identify Valid Credentials**  
 - Monitor **HTTP Response Codes** and **Content Length**.  
