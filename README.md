@@ -32,13 +32,12 @@ This report contains the findings from a penetration test conducted on 'http://t
   -------------------
 
 
-  ## 📂 Task 5 (Email Analysis)
+  ## 📂 Task 5 
 
 
   ## 📌 Overview
 
 -[Click here to view Task 5]
-- [raw Email file](task5/suspicious_email.eml)
-- [Report](task5/email_analysis_report.md)
-- 
+
+ 
 
