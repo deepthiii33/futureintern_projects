@@ -9,13 +9,16 @@
 - Click Start Capture to begin capturing packets.
 - Stop the capture once enough network packets have been collected.
   
-  - [**Target site and Wireshark**](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/target_wireshark.png)
-   - **Captured Packets:**![View Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/captured_traffic.png)
+  - [**Target site and Wireshark page**](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/target_wireshark.png)
+   - **Captured Packets:**![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/captured_traffic.png)
 
 ###   Applying Filters
 
 - You can apply filters such as http, http.request.method == "POST", ip, ip.src ==, dns, and others based on our needs.
-   - **HTTP Filter:** ![View Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/http_filter.png)
+
+#### Analyzing HTTP Packets in Wireshark
+
+   - **HTTP Filter:** ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/http_filter.png)
 - In this screenshot, I have applied an HTTP filter in Wireshark to capture and analyze HTTP requests and responses.
 
   ### First Steps
@@ -56,6 +59,98 @@
 
  * Sensitive information like usernames and passwords can be exposed if a website doesn’t use encryption (HTTPS).
  * Attackers can steal session cookies and gain unauthorized access to accounts.
+
+
+## Analyzing DNS Packets in Wireshark
+- Next, I am going to apply the **DNS filter**.
+   - ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/DNS_filter.png)
+- After applying the DNS filter, I captured the Domain Name System (DNS) requests and responses related to the target website.
+- here i'm analyzing first 2 packets
+   1. Packet 1: DNS Query (Request)
+      - Source: 192.168.1.10 (My system)
+      - Destination: 103.153.93.230 (DNS Server)
+      - Query: My system is requesting the IP address of testphp.vulnweb.com
+   2. Packet 2: DNS Response (Reply)
+      - Source: 103.153.93.230 (DNS Server)
+      - Destination: 192.168.1.10 (My system)
+      - Response: The DNS server resolves testphp.vulnweb.com to IP address 44.228.249.3
+
+  * This shows how a domain name is translated into an IP address before making an HTTP request.
+  * Attackers can exploit DNS queries for spoofing or monitoring browsing activity.
+
+ -------
+
+# Conclusion
+
+- In this report, I demonstrated how to capture network packets using Wireshark and apply various filters like HTTP, DNS, and POST requests 
+    to extract meaningful information such as user credentials, headers, and domain resolution details.
+-  By using these filters, we can effectively analyze network traffic and understand how data is transmitted over the network.
+- Like this ,We can apply filters to analyze the captured packets and gain deeper insights into network behavior and security 
+   vulnerabilities.
+
+
+  ---------
+
+# To save Wireshark captured packets for later analysis:
+
+ 1. **Saving Captured Packets in Wireshark** 
+    - After capturing the packets , Once you have enough data, click the red **Stop** button to stop the capture
+ 2. **Save the Capture File**:  
+   - Click **File** → **Save As...**  
+   - Choose a location and provide a filename.  
+   - Select the format **PCAP** (`.pcap` or `.pcapng`), which is the standard Wireshark file format.  
+   - Click **Save**.  
+
+ **Opening a Saved Capture File**  
+1. Open Wireshark.  
+2. Click **File** → **Open...**  
+3. Select the previously saved **.pcap** file.  
+4. Click **Open** to analyze the saved packets.  
+
+- *OR* use the command:  wireshark filename.pcap
+- This will open the specified capture file directly in Wireshark.
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
 
 
  
