@@ -107,7 +107,7 @@
 3. Select the previously saved **.pcap** file.  
 4. Click **Open** to analyze the saved packets.  
 
-- *OR* use the command:  wireshark filename.pcap
+- *OR* use the command: **wireshark filename.pcap**
 - This will open the specified capture file directly in Wireshark.
 
 
