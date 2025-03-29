@@ -29,10 +29,16 @@ This report contains the findings from a penetration test conducted on 'http://t
 - [john the ripper and hashcat ](task4/john_ripper_and_hashcat_findings.md)
 - [final report](task4/report.md)
 
+  -------------------
 
-## 🛠 Tools Used
-- **Burp Suite** - Capturing and analyzing HTTP requests.
-- **John the Ripper** - Cracking password hashes
-- **Hashcat** - Advanced GPU-based password cracking.
-- **OpenSSL** - Generating password hashes
+
+  ## 📂 Task 5 (Email Analysis)
+
+
+  ## 📌 Overview
+
+-[Click here to view Task 5]
+- [raw Email file](task5/suspicious_email.eml)
+- [Report](task5/email_analysis_report.md)
+- 
 
