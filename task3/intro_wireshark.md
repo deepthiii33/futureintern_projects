@@ -31,19 +31,19 @@
 - *.pcap (Packet Capture) → Older format, stores captured network packets.
 - *.pcapng (Packet Capture Next Generation) → Newer format, supports multiple interfaces, metadata, and better compression.
 
-# How to open a pcapng file through wireshrak in linux 
+## How to open a pcapng file through wireshrak in linux 
 
- ## **Method 1: Using GUI**  
+ ### **Method 1: Using GUI**  
 1. Open Wireshark:  command used "**wireshark &**
 2. Click **"File" → "Open"**.  
 3. Navigate to your ".pcapng" file and select it.  
 4. Click **"Open"** to start analyzing the packet data.  
 
-## **Method 2: Using Terminal**  
+ ### **Method 2: Using Terminal**  
 - If you already know the file location, open it directly from the terminal:  **wireshark /path/to/file.pcapng**
 - [Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark_open_through_terminal.png)
   
-## **Method 3: Using TShark (CLI Alternative to Wireshark)**  
+ ### **Method 3: Using TShark (CLI Alternative to Wireshark)**  
 - If you prefer the **command line**, use **TShark**:  tshark -r /path/to/file.pcapng
 - This prints the packet details in the terminal  
 [Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/tshark.png)
@@ -51,7 +51,7 @@
 
 -------------
 
-# Filters in wireshark 
+## Filters in wireshark 
   - **Wireshark has two types of filters:**
    1. Capture Filters → Applied before capturing packets.
       -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
@@ -64,11 +64,11 @@
 
 -----------
 
-# Wireshark Features (Packet Capture Details)
+## Wireshark Features (Packet Capture Details)
 
 When capturing packets in Wireshark, , the interface provides multiple columns displaying useful information about each packet:
 
-## Main Wireshark Columns
+### Main Wireshark Columns
 
 - No.	---> Packet number in the capture session.
 - Time ---> 	Timestamp when the packet was captured.
@@ -78,7 +78,7 @@ When capturing packets in Wireshark, , the interface provides multiple columns d
 - Length --->	The size of the packet in bytes.
 - Info	---> A summary of the packet details (e.g., HTTP request type, DNS query, etc.).
 
-  ## Other Features in Wireshark
+### Other Features in Wireshark
 
 - Packet Details Pane --->  Shows deep protocol-level breakdown of a selected packet.
 - Packet List Pane ---> Displays all captured packets with details.
@@ -87,6 +87,8 @@ When capturing packets in Wireshark, , the interface provides multiple columns d
 - Filters ---> Allows searching for specific packets (e.g., http, ip.addr == 192.168.1.1).
 - Follow Stream ---> Helps analyze a full conversation (e.g., TCP, HTTP request-response).
 - Export Data ---> Save captured packets in various formats (.pcap, .txt, etc.).
+
+  [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/captured_traffic.png)
 
   ------
 
