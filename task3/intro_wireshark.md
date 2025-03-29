@@ -11,6 +11,8 @@
 
  -  can get detalied information from it's official site **"https://www.wireshark.org/"**
 
+----------
+
 ## Downloading and using Wireshark
 
  - In most Kali Linux installations, Wireshark comes pre-installed
@@ -22,22 +24,12 @@
 
    **Here , i'm using kali linux for wireshark , not windows**
 
+--------------
+
 ## About .pcapng  and .pcap files
 
 - *.pcap (Packet Capture) → Older format, stores captured network packets.
 - *.pcapng (Packet Capture Next Generation) → Newer format, supports multiple interfaces, metadata, and better compression.
-
-# Filters in wireshark 
-  - **Wireshark has two types of filters:**
-   1. Capture Filters → Applied before capturing packets.
-      -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
-        [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshar_capture_filter.png)
-
-   2. Display Filters → Applied after capturing packets to analyze specific data.
-      - Example:http ---> (Shows only HTTP packets.)
-
- [Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
-
 
 # How to open a pcapng file through wireshrak in linux 
 
@@ -57,7 +49,51 @@
 [Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/tshark.png)
 - Can get more usage of tshark through the command **tshark --help**
 
+-------------
 
+# Filters in wireshark 
+  - **Wireshark has two types of filters:**
+   1. Capture Filters → Applied before capturing packets.
+      -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
+        [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshar_capture_filter.png)
+
+   2. Display Filters → Applied after capturing packets to analyze specific data.
+      - Example:http ---> (Shows only HTTP packets.)
+
+ [Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
+
+-----------
+
+# Wireshark Features (Packet Capture Details)
+
+When capturing packets in Wireshark, , the interface provides multiple columns displaying useful information about each packet:
+
+## Main Wireshark Columns
+
+- No.	---> Packet number in the capture session.
+- Time ---> 	Timestamp when the packet was captured.
+- Source (Src) --->	The sender's IP or MAC address.
+- Destination (Dst)	---> The receiver's IP or MAC address.
+- Protocol ---> 	The protocol used (TCP, UDP, HTTP, DNS, etc.).
+- Length --->	The size of the packet in bytes.
+- Info	---> A summary of the packet details (e.g., HTTP request type, DNS query, etc.).
+
+  ## Other Features in Wireshark
+
+- Packet Details Pane --->  Shows deep protocol-level breakdown of a selected packet.
+- Packet List Pane ---> Displays all captured packets with details.
+- Packet Bytes Pane ---> Displays raw data in hexadecimal and ASCII format.
+- Color Coding ---> Highlights packets based on protocol for easy identification.
+- Filters ---> Allows searching for specific packets (e.g., http, ip.addr == 192.168.1.1).
+- Follow Stream ---> Helps analyze a full conversation (e.g., TCP, HTTP request-response).
+- Export Data ---> Save captured packets in various formats (.pcap, .txt, etc.).
+
+  ------
+
+
+
+
+  
 
 
 
