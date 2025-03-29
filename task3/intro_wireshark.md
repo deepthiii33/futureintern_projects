@@ -13,7 +13,7 @@
 
 ----------
 
-## Downloading and using Wireshark
+## Wireshark Setup & Usage
 
  - In most Kali Linux installations, Wireshark comes pre-installed
  - if not you can install using  **sudo apt update && sudo apt install wireshark -y**  and run with **sudo wireshark** command
@@ -60,7 +60,7 @@
    2. Display Filters → Applied after capturing packets to analyze specific data.
       - Example:http ---> (Shows only HTTP packets.)
 
- [Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
+  [Some basic filters in Wireshark](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/wireshark%20filters.jpg)
 
 -----------
 
