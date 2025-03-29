@@ -29,7 +29,7 @@
   - --wordlist=/usr/share/wordlists/rockyou.txt ---> Uses the RockYou wordlist, a common list of passwords, to try and crack the hash.You can replace it with your own wordlist if needed
   - password123_hash.txt ---> The file containing the hashed password that we want to crack.
 
-   [example of using john the ripper md5 hashed password](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/john_ripper_md5.png)
+   ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/john_ripper_md5.png)
 
 
   - If we have a hashed passowrd with us we can do the  "run john the ripper on the hash" command and get the password of the hash value. Suppose we don't know type of hash value(md5 , sha1 , sha256,...)
@@ -40,7 +40,7 @@
 
    # Below is an example for sha1 hash type
 
-      [sha1 hash type pass cracking using john the ripper](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/john_sha1.png)
+      ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/john_sha1.png)
 
   - like this we can hashcat tool for same process
 
@@ -63,7 +63,7 @@
     - hashvalue.txt ---> The file that contains the hashed password we want to crack.
     - /usr/share/wordlists/rockyou.txt ---> The wordlist Hashcat will use to try and crack the hash.
  
-  [example for hashcat](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/hashcat.png)
+  ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/hashcat.png)
 
   * Hashcat takes the hash from hash.txt.
   * It compares it with hashes of passwords from rockyou.txt.
