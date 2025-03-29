@@ -29,6 +29,12 @@
    - Phrases like "FREE WORKSHOP," "INVITE ONLY," and "become an ethical hacker from scratch" are common in scam emails.
 
  ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task5/screenshots/spam_mail_2.png)
+ 
+ 4. Suspicious Link & URL Redirects
+  -  The email contains a masked tracking link:https://cbbez3.ff01.fdske.com/e/c/0...
+  -  URL scan results indicate that it redirects to  a known cybersecurity professional’s website, but the use of redirection raises concerns about legitimacy.
+   
+
 
 
 
