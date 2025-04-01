@@ -1,6 +1,6 @@
 # Internship_projects
 
-## 📂 Task 2 
+## 📂 Task 2 (Information Gathering through Maltego)
  
   ### 📌 Overview
  This report documents an **OSINT (Open-Source Intelligence) investigation** conducted using **Maltego CE**  on 'http://testphp.vulnweb.com' . The goal was to gather information about the target site.
