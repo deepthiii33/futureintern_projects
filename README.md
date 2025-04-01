@@ -1,5 +1,12 @@
 # Internship_projects
 
+## 📂 Task 2 
+
+
+  ## 📌 Overview
+
+-[Click here to view Task 2]
+
 ## 📂 Task 3 (Sniffing attack using wireshark)
 
 ## 📌 Overview
@@ -23,21 +30,19 @@ This report contains findings conducted on 'http://testphp.vulnweb.com' using wi
 ## 📌 Overview
 This report contains the findings from a penetration test conducted on 'http://testphp.vulnweb.com/'. The test focused on identifying vulnerabilities using **Burp Suite, John the Ripper, and Hashcat**
 
-##  Included Files  
+###  Included Files  
 - [Click here to view Task 4](https://github.com/deepthiii33/futureintern_projects/tree/main/task4)
 - [burp suite](task4/burp_findings.md)
 - [john the ripper and hashcat ](task4/john_ripper_and_hashcat_findings.md)
 - [final report](task4/report.md)
 
+###  🛠 Tools Used
+  - **hashcat**
+  - **john the ripper**
+  - **Burp suite**
   -------------------
 
 
-  ## 📂 Task 5 
-
-
-  ## 📌 Overview
-
--[Click here to view Task 5]
 
  
 
