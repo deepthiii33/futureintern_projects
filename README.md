@@ -6,10 +6,10 @@
  This report documents an **OSINT (Open-Source Intelligence) investigation** conducted using **Maltego CE**  on 'http://testphp.vulnweb.com' . The goal was to gather information about the target site.
 
  ###  Included Files  
-- [introduction]()
+- [introduction](task2/Introduction.md)
 - [Click here to view Task 2](https://github.com/deepthiii33/futureintern_projects/tree/main/task2)
-- [Click Here to View the Full Maltego Report](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/maltego_findings_graph_report.pdf)
-- [maltego final graph]()
+- [Click Here to View the Full Maltego Report](task2/maltego_findings_graph_report.pdf)
+- [maltego  graph findings](task2/maltego_findings.md)
 
 ### 🛠 Tools Used
 - **Maltego** - Maltego is a tool for gathering and visualizing online information.
