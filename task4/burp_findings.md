@@ -61,7 +61,7 @@ You can also download the latest version directly from https://portswigger.net/b
 
   - Here, I load username.txt and pass.txt, which I previously saved in my folder with known username and password ,and actuall one from the site
 
-[Example of the username and pass files which I saved and loaded](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/user_pass_list.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/user_pass_list.png)
  
     
 
