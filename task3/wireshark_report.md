@@ -7,10 +7,14 @@
   - In this case, I chose **eth0** as my interface.
 - Start exploring the target site (eg: login page,Profile,Cart,Guestbook,...)
 - Click Start Capture to begin capturing packets.
-- Stop the capture once enough network packets have been collected.
+- Stop the capture once enough network packets have been collected
+-  Target Site and wireshark
   
-  - [**Target site and Wireshark page**](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/target_wireshark.png)
-   - **Captured Packets:**![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/captured_traffic.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/target_wireshark.png)
+
+**Captured Packets:**
+
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/captured_traffic.png)
 
 ###   Applying Filters
 
@@ -18,15 +22,17 @@
 
 #### Analyzing HTTP Packets in Wireshark
 
-   - **HTTP Filter:** ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/http_filter.png)
-- In this screenshot, I have applied an HTTP filter in Wireshark to capture and analyze HTTP requests and responses.
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/http_filter.png)
+
+Here, I  applied an HTTP filter in Wireshark to capture and analyze HTTP requests and responses.
 
   ### First Steps
   - I checked my IP address using the ifconfig command.
   - I verified the target website’s reachability using the ping command.
     
   #### Key Observations from captured packets
-     1. GET Request (Packet 12)
+    
+    1. GET Request (Packet 12)
         - The source IP (192.168.1.10) sends a GET /login.php request to destination IP (44.228.249.3).
         - The Host is testphp.vulnweb.com, a vulnerable testing website.
         - The User-Agent reveals that the request was made using Mozilla Firefox on Linux.
@@ -41,10 +47,12 @@
   ### Next Step
 -  Right-click on a POST request and select Follow → HTTP Stream to view the full login details
 - Or else, use  filter like : http.request.method == "POST"
-    - [**Example**](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/req_method_post.png)
 
-- From there, we can get the **username, password, headers, and all details,Sensitive Information**(If a site is vulnerable, data leaks might appear in responses) of the HTTP request and response.
-   - [Example](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/http_stream.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/req_method_post.png)
+
+From there, we can get the **username, password, headers, and all details,Sensitive Information**(If a site is vulnerable, data leaks might appear in responses) of the HTTP request and response.
+
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/http_stream.png)
  
 #### key observation from HTTP stream
   1. Captured Login Credentials:
@@ -62,9 +70,11 @@
 
 
 ## Analyzing DNS Packets in Wireshark
-- Next, I am going to apply the **DNS filter**.
-   - ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/Images/DNS_filter.png)
-- After applying the DNS filter, I captured the Domain Name System (DNS) requests and responses related to the target website.
+- Next, apply the **DNS filter**.
+
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/DNS_filter.png)
+
+After applying the DNS filter, I captured the Domain Name System (DNS) requests and responses related to the target website.
 - here i'm analyzing first 2 packets
    1. Packet 1: DNS Query (Request)
       - Source: 192.168.1.10 (My system)
