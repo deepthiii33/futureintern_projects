@@ -1,6 +1,7 @@
 ##   Maltego Graph Analysis: Detailed Connection Explanation
 This document provides a detailed breakdown of the connections identified in the Maltego graph analysis. The graph visualizes relationships between online entities, offering insights into their interdependencies.
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots/final_graph_maltego.png)
+
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task1/screenshots/final_graph_maltego.png)
 
 ###   1.   Domain: vulnweb.com
 
