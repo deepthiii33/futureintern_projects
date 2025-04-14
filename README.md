@@ -42,7 +42,6 @@ This report contains the findings from a penetration test conducted on 'http://t
 - [Task 3](https://github.com/deepthiii33/futureintern_projects/tree/main/task3)
 - [burp suite](task3/burp_findings.md)
 - [john the ripper and hashcat ](task3/john_ripper_and_hashcat_findings.md)
-- [final report](task3/report.md)
 
 ###  🛠 Tools Used
   - **hashcat**
