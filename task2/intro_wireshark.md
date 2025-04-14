@@ -42,7 +42,7 @@ Wireshark is a free and open-source network packet analyzer that allows users to
 - If you prefer the **command line**, use **TShark**:  tshark -r /path/to/file.pcapng
 - This prints the packet details in the terminal  
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/tshark.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//tshark.png)
 
 Can get more usage of tshark through the command **tshark --help**
 
@@ -52,12 +52,12 @@ Can get more usage of tshark through the command **tshark --help**
   - **Wireshark has two types of filters:**
    1. Capture Filters → Applied before capturing packets.
       -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
-        [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/wireshar_capture_filter.png)
+        [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//wireshar_capture_filter.png)
 
    2. Display Filters → Applied after capturing packets to analyze specific data.
       - Example:http ---> (Shows only HTTP packets.)
 
- ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/wireshark%20filters.jpg)
+ ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//wireshark%20filters.jpg)
 
 -----------
 
@@ -85,7 +85,7 @@ When capturing packets in Wireshark, , the interface provides multiple columns d
 - Follow Stream ---> Helps analyze a full conversation (e.g., TCP, HTTP request-response).
 - Export Data ---> Save captured packets in various formats (.pcap, .txt, etc.).
 
-  [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/captured_traffic.png)
+  [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//captured_traffic.png)
 
   ------
 
