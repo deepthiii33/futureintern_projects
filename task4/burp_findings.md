@@ -37,7 +37,7 @@ You can also download the latest version directly from https://portswigger.net/b
 - Locate the request and look for **username and password fields**.  
 - Send the request to **Intruder** for further testing.
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/burp_capture.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/screenshots/burp_capture.png)
 ### **4. Configure Intruder for Brute Force Attack**  
 
 #### **Select the Attack Type**  
@@ -52,23 +52,23 @@ You can also download the latest version directly from https://portswigger.net/b
   - Select **"Simple List"** as the payload type.  
   - Load a **wordlist of usernames** or manually enter **common usernames**
     
-[Example for username payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/username_payload.png)
+[Example for username payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/screenshots/username_payload.png)
     
 - **Payload Set [2] (Passwords)**:  
   - Same process as **Payload Set [1]**, but this time  passwords
 
- [Example for pass payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/pass_payload.png)
+ [Example for pass payload](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/screenshots/pass_payload.png)
 
   - Here, I load username.txt and pass.txt, which I previously saved in my folder with known username and password ,and actuall one from the site
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/user_pass_list.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/screenshots/user_pass_list.png)
  
     
 
 ### **5. Start the Attack**  
 - Click **Start Attack** in Burp’s **Intruder**.
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task4/screenshots/attack.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task3/screenshots/attack.png)
 
 ### **6. Identify Valid Credentials**  
 - Monitor **HTTP Response Codes** and **Content Length**.  
