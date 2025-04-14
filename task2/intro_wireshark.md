@@ -51,8 +51,9 @@ Can get more usage of tshark through the command **tshark --help**
 ## Filters in wireshark 
   - **Wireshark has two types of filters:**
    1. Capture Filters → Applied before capturing packets.
-      -  Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
-        [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//wireshar_capture_filter.png)
+      - Example:tcp port 80  --> (Captures only TCP traffic on port 80.)
+    
+ ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//wireshar_capture_filter.png)
 
    2. Display Filters → Applied after capturing packets to analyze specific data.
       - Example:http ---> (Shows only HTTP packets.)
@@ -85,7 +86,7 @@ When capturing packets in Wireshark, , the interface provides multiple columns d
 - Follow Stream ---> Helps analyze a full conversation (e.g., TCP, HTTP request-response).
 - Export Data ---> Save captured packets in various formats (.pcap, .txt, etc.).
 
-  [example](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//captured_traffic.png)
+  ![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//captured_traffic.png)
 
   ------
 
