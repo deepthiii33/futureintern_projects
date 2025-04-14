@@ -8,13 +8,10 @@
 - Start exploring the target site (eg: login page,Profile,Cart,Guestbook,...)
 - Click Start Capture to begin capturing packets.
 - Stop the capture once enough network packets have been collected
--  Target Site and wireshark
   
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/target_wireshark.png)
+**Captured Packets from the target site:**
 
-**Captured Packets:**
-
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/captured_traffic.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//captured_traffic.png)
 
 ###   Applying Filters
 
@@ -22,7 +19,7 @@
 
 #### Analyzing HTTP Packets in Wireshark
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/http_filter.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//http_filter.png)
 
 Here, I  applied an HTTP filter in Wireshark to capture and analyze HTTP requests and responses.
 
@@ -48,11 +45,11 @@ Here, I  applied an HTTP filter in Wireshark to capture and analyze HTTP request
 -  Right-click on a POST request and select Follow → HTTP Stream to view the full login details
 - Or else, use  filter like : http.request.method == "POST"
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/req_method_post.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//req_method_post.png)
 
 From there, we can get the **username, password, headers, and all details,Sensitive Information**(If a site is vulnerable, data leaks might appear in responses) of the HTTP request and response.
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/http_stream.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//http_stream.png)
  
 #### key observation from HTTP stream
   1. Captured Login Credentials:
@@ -72,7 +69,7 @@ From there, we can get the **username, password, headers, and all details,Sensit
 ## Analyzing DNS Packets in Wireshark
 - Next, apply the **DNS filter**.
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/DNS_filter.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots//DNS_filter.png)
 
 After applying the DNS filter, I captured the Domain Name System (DNS) requests and responses related to the target website.
 - here i'm analyzing first 2 packets
