@@ -36,7 +36,7 @@ Wireshark is a free and open-source network packet analyzer that allows users to
  ### **Method 2: Using Terminal**  
 - If you already know the file location, open it directly from the terminal:  **wireshark /path/to/file.pcapng**
 
-![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/Images/wireshark_open_through_terminal.png)
+![](https://github.com/deepthiii33/futureintern_projects/blob/main/task2/screenshots/wireshark_through_terminal.png)
   
  ### **Method 3: Using TShark (CLI Alternative to Wireshark)**  
 - If you prefer the **command line**, use **TShark**:  tshark -r /path/to/file.pcapng
